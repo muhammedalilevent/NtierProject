@@ -1,0 +1,134 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@model List<NTier.Model.Entities.Product>
+<!-- ========================================== SECTION – HERO ========================================= -->
+<div id="hero">
+    <div id="owl-main" class="owl-carousel owl-inner-nav owl-ui-sm">
+        @{ int bgImageCount = 0;}
+        @foreach (var item in Model)
+        {
+            bgImageCount++;
+
+            <div class="item" style="width:100%; background-image: url(@item.ImagePath);">
+                <!-- /.container-fluid -->
+            </div>
+            if (bgImageCount == 5) { break; }
+        }
+    </div>
+    <!-- /.owl-carousel -->
+</div>
+<!-- ========================================= SECTION – HERO : END ========================================= -->
+<!-- ============================================== INFO BOXES ============================================== -->
+<!-- /.info-boxes -->
+<!-- ============================================== INFO BOXES : END ============================================== -->
+<!-- ============================================== SCROLL TABS ============================================== -->
+<div id="product-tabs-slider" class="scroll-tabs outer-top-vs wow fadeInUp">
+    <div class="more-info-tab clearfix ">
+        <h3 class="new-product-title pull-left">New Products</h3>
+    </div>
+    <!--4/4'lük ürün listelemesi için-->
+    @{ int productCounter = 0;}
+    @for (int i = 0; i < Model.Count / 4; i++)
+    {
+        <div class="tab-content outer-top-xs">
+            <div class="tab-pane in active" id="all">
+                <div class="product-slider">
+                    <div class="owl-carousel home-owl-carousel custom-carousel owl-theme" data-item="4">
+                        @for (int j = 0; j < Model.Count / 4; j++)
+                        {
+                            <div class="item item-carousel">
+                                <div class="products">
+                                    <div class="product">
+                                        <div class="product-image">
+                                            <div class="image"> <a href="/Product/Detail/@Model[productCounter].Id"><img src="@Model[productCounter].ImagePath" alt=""></a> </div>
+                                            <!-- /.image -->
+                                            <div class="tag new"><span>new</span></div>
+                                        </div>
+                                        <!-- /.product-image -->
+                                        <div class="product-info text-left">
+                                            <h3 class="name"><a href="/Product/detail/@Model[productCounter].Id">@Model[productCounter].Name</a></h3>
+                                            <div class="rating rateit-small"></div>
+                                            <div class="description"></div>
+                                            <div class="product-price"> <span class="price">@Model[productCounter].Price</span> </div>
+                                            <!-- /.product-price -->
+                                        </div>
+                                        <!-- /.product-info -->
+                                        <div class="cart clearfix animate-effect">
+                                            <div class="action">
+                                            </div>
+                                            <!-- /.action -->
+                                        </div>
+                                        <!-- /.cart -->
+                                    </div>
+                                    <!-- /.product -->
+                                </div>
+                                <!-- /.products -->
+                            </div>
+                            productCounter++;
+                        }
+                        <!-- /.item -->
+                    </div>
+                    <!-- /.home-owl-carousel -->
+                </div>
+                <!-- /.product-slider -->
+            </div>
+        </div>
+    }
+
+
+    <!-- /.tab-content -->
+</div>
+<!-- /.scroll-tabs -->
+<!-- ============================================== SCROLL TABS : END ============================================== -->
+<!-- ============================================== WIDE PRODUCTS ============================================== -->
+<div class="wide-banners wow fadeInUp outer-bottom-xs">
+    <div class="row">
+        <div class="col-md-7 col-sm-7">
+            <div class="wide-banner cnt-strip">
+                <div class="image"> <img class="img-responsive" src="~/Content/images/home-banner1.jpg" alt=""> </div>
+            </div>
+            <!-- /.wide-banner -->
+        </div>
+        <!-- /.col -->
+        <div class="col-md-5 col-sm-5">
+            <div class="wide-banner cnt-strip">
+                <div class="image"> <img class="img-responsive" src="~/Content/images/home-banner2.jpg" alt=""> </div>
+            </div>
+            <!-- /.wide-banner -->
+        </div>
+        <!-- /.col -->
+    </div>
+    <!-- /.row -->
+</div>
+<!-- /.wide-banners -->
+<!-- ============================================== WIDE PRODUCTS : END ============================================== -->
+<!-- ============================================== WIDE PRODUCTS ============================================== -->
+<div class="wide-banners wow fadeInUp outer-bottom-xs">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="wide-banner cnt-strip">
+                <div class="image"> <img class="img-responsive" src="~/Content/images/home-banner.jpg" alt=""> </div>
+                <div class="strip strip-text">
+                    <div class="strip-inner">
+                        <h2 class="text-right">
+                            New Mens Fashion<br>
+                            <span class="shopping-needs">Save up to 40% off</span>
+                        </h2>
+                    </div>
+                </div>
+                <div class="new-label">
+                    <div class="text">NEW</div>
+                </div>
+                <!-- /.new-label -->
+            </div>
+            <!-- /.wide-banner -->
+        </div>
+        <!-- /.col -->
+    </div>
+    <!-- /.row -->
+</div>
+<!-- /.wide-banners -->
+<!-- ============================================== WIDE PRODUCTS : END ============================================== -->

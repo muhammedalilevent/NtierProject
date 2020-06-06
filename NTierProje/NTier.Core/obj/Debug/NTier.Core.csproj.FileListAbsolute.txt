@@ -1,0 +1,9 @@
+C:\D\YMS5528\NtierProject\NTierProje\NTier.Core\bin\Debug\NTier.Core.dll.config
+C:\D\YMS5528\NtierProject\NTierProje\NTier.Core\bin\Debug\NTier.Core.dll
+C:\D\YMS5528\NtierProject\NTierProje\NTier.Core\bin\Debug\NTier.Core.pdb
+C:\D\YMS5528\NtierProject\NTierProje\NTier.Core\bin\Debug\EntityFramework.dll
+C:\D\YMS5528\NtierProject\NTierProje\NTier.Core\bin\Debug\EntityFramework.SqlServer.dll
+C:\D\YMS5528\NtierProject\NTierProje\NTier.Core\bin\Debug\EntityFramework.xml
+C:\D\YMS5528\NtierProject\NTierProje\NTier.Core\bin\Debug\EntityFramework.SqlServer.xml
+C:\D\YMS5528\NtierProject\NTierProje\NTier.Core\obj\Debug\NTier.Core.dll
+C:\D\YMS5528\NtierProject\NTierProje\NTier.Core\obj\Debug\NTier.Core.pdb

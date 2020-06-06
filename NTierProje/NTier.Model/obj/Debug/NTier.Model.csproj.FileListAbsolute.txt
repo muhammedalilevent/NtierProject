@@ -1,0 +1,12 @@
+C:\D\YMS5528\NtierProject\NTierProje\NTier.Model\bin\Debug\NTier.Model.dll.config
+C:\D\YMS5528\NtierProject\NTierProje\NTier.Model\bin\Debug\NTier.Model.dll
+C:\D\YMS5528\NtierProject\NTierProje\NTier.Model\bin\Debug\NTier.Model.pdb
+C:\D\YMS5528\NtierProject\NTierProje\NTier.Model\bin\Debug\EntityFramework.dll
+C:\D\YMS5528\NtierProject\NTierProje\NTier.Model\bin\Debug\EntityFramework.SqlServer.dll
+C:\D\YMS5528\NtierProject\NTierProje\NTier.Model\bin\Debug\NTier.Core.dll
+C:\D\YMS5528\NtierProject\NTierProje\NTier.Model\bin\Debug\NTier.Core.pdb
+C:\D\YMS5528\NtierProject\NTierProje\NTier.Model\bin\Debug\EntityFramework.xml
+C:\D\YMS5528\NtierProject\NTierProje\NTier.Model\bin\Debug\EntityFramework.SqlServer.xml
+C:\D\YMS5528\NtierProject\NTierProje\NTier.Model\obj\Debug\NTier.Model.csprojResolveAssemblyReference.cache
+C:\D\YMS5528\NtierProject\NTierProje\NTier.Model\obj\Debug\NTier.Model.dll
+C:\D\YMS5528\NtierProject\NTierProje\NTier.Model\obj\Debug\NTier.Model.pdb
